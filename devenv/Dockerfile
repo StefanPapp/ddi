@@ -13,6 +13,9 @@ RUN chmod a+x /tmp/install_zsh.sh &&  /tmp/install_zsh.sh
 ADD install_awevim.sh /tmp/install_awevim.sh
 RUN chmod a+x /tmp/install_awevim.sh &&  /tmp/install_awevim.sh 
 
+ADD install_powertools.sh /tmp/install_powertools.sh
+RUN chmod a+x /tmp/install_powertools.sh &&  /tmp/install_powertools.sh 
+
 ADD zshrc_tmp /tmp/zshrc_tmp
 RUN mv /tmp/zshrc_tmp  ~/.zshrc
 
